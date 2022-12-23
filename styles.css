@@ -1,0 +1,58 @@
+
+form{
+    border:1px solid #000;
+    padding:10 px;
+    border-radius:15px;
+    background-color:#eee;
+}
+
+#divCarteira{
+	margin-right: auto;
+    margin-left: auto;
+	width: 1417px;
+	height: 850px;
+	background-image: url(img/CarteiraZerada.png);
+    font-family: Neue Plak;
+    font-weight: 800;
+    font-size: 36pt;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: black;
+}
+
+#carteira{
+    position: relative;
+    max-width: 960px;
+    max-height: 540px;
+}
+
+#output{
+	position:absolute;
+    width: 284px;
+    height: 312px;
+    background: #000;
+	margin-left: 120px;
+	margin-top: 192px;
+}
+
+#nome{
+    color: white;
+    position: absolute;
+    margin-left: 605px;
+    margin-top: 309px;
+    letter-spacing: -3pt;
+}
+
+#matricula{
+    color: white;
+    position: absolute;
+}
+
+#cpf{
+    color: white;
+    position: absolute;
+}
+
+#validade{
+    color: white;
+    position: absolute;
+}

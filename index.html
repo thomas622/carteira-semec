@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Carteira</title>
+</head>
+<body>
+    <form>
+            <label>Nome Completo:</label>
+            <br>
+            <input type="text" name="botaoNome">
+            <input type="submit">
+        <div>  
+            <label>Matricula:</label>
+            <br>
+            <input type="text" name="botaoMatricula">    
+            <input type="submit">
+        </div>
+        <div>   
+            <label>Número do CPF:</label>
+            <br>
+            <input type="text" name="botaoCpf">
+            <input type="submit">
+        </div>
+        <div>   
+            <label>Validade:</label>
+            <br>
+            <input type="text" name="botaoValidade">
+            <input type="submit">
+            <br>
+            Foto: <input type="file" accept="image/*" onchange="loadFile(event)">
+        </div>
+    </form>
+    <br>
+    <div id="divCarteira">
+		<img id="output"/>  
+        <label id="nome"> FRANCISCO GILDASIO DE FIGUEIREDO</label>
+        <label id="matricula"> MATRICULA AQUI</label>
+        <label id="cpf"> CPF AQUI</label>
+        <label id="validade"> VALIDADE AQUI</label> 
+    </div>    
+
+    
+    
+</body>
+</html>
