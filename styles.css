@@ -17,6 +17,7 @@ form{
     font-size: 36pt;
     -webkit-text-stroke-width: 3px;
     -webkit-text-stroke-color: black;
+    color: white;
 }
 
 #carteira{
@@ -27,7 +28,7 @@ form{
 
 #output{
 	position:absolute;
-    width: 284px;
+    width: 285px;
     height: 312px;
     background: #000;
 	margin-left: 120px;
@@ -35,24 +36,33 @@ form{
 }
 
 #nome{
-    color: white;
     position: absolute;
     margin-left: 605px;
     margin-top: 309px;
     letter-spacing: -3pt;
+    text-align: right;
 }
 
 #matricula{
-    color: white;
     position: absolute;
+    margin-left: 1120px;
+    margin-top: 505px;
+    letter-spacing: -3pt;
+    text-align: right;
 }
 
 #cpf{
-    color: white;
     position: absolute;
+    margin-left: 949px;
+    margin-top: 597px;
+    letter-spacing: -3pt;
+    text-align: right;
 }
 
 #validade{
-    color: white;
     position: absolute;
+    margin-left: 1103px;
+    margin-top: 700px;
+    letter-spacing: -3pt;
+    text-align: right;
 }
