@@ -5,3 +5,18 @@ var loadFile = function(event) {
       URL.revokeObjectURL(output.src) // free memory
     }
   };
+
+function atualizaCarteira(){
+  //Função que pega os dados através do formulário e preenche na carteira.
+  var nome = document.getElementById("botaoNome").value;
+  document.getElementById("nome").innerHTML = nome;
+
+  var matricula = document.getElementById("botaoMatricula").value;
+  document.getElementById("matricula").innerHTML = matricula;
+
+  var cpf = document.getElementById("botaoCpf").value;
+  document.getElementById("cpf").innerHTML = cpf;
+
+  var validade = document.getElementById("botaoValidade").value;
+  document.getElementById("validade").innerHTML = validade;
+}
