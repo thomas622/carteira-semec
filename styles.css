@@ -7,7 +7,7 @@ form{
 }
 
 #divCarteira{
-	margin-right: auto;
+    margin-right: auto;
     margin-left: auto;
 	width: 1417px;
 	height: 850px;
@@ -20,12 +20,6 @@ form{
     color: white;
 }
 
-#carteira{
-    position: relative;
-    max-width: 960px;
-    max-height: 540px;
-}
-
 #output{
 	position:absolute;
     width: 285px;
@@ -36,7 +30,7 @@ form{
 }
 
 #nome{
-    position: absolute;
+    position:absolute;
     margin-left: 605px;
     margin-top: 309px;
     letter-spacing: -3pt;
@@ -65,4 +59,9 @@ form{
     margin-top: 700px;
     letter-spacing: -3pt;
     text-align: right;
+}
+
+#teste{
+    text-align: right;
+    position: relative;
 }

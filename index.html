@@ -9,31 +9,28 @@
     <title>Carteira</title>
 </head>
 <body>
-    <form>
+    <form id="form" method="post">
             <label>Nome Completo:</label>
             <br>
-            <input type="text" name="botaoNome">
-            <input type="submit">
+            <input type="text" id="botaoNome" onkeyup="atualizaCarteira()">
         <div>  
             <label>Matricula:</label>
             <br>
-            <input type="text" name="botaoMatricula">    
-            <input type="submit">
+            <input type="text" id="botaoMatricula" onkeyup="atualizaCarteira()">    
         </div>
         <div>   
             <label>Número do CPF:</label>
             <br>
-            <input type="text" name="botaoCpf">
-            <input type="submit">
+            <input type="text" id="botaoCpf" onkeyup="atualizaCarteira()">
         </div>
         <div>   
             <label>Validade:</label>
             <br>
-            <input type="text" name="botaoValidade">
-            <input type="submit">
+            <input type="text" id="botaoValidade" onkeyup="atualizaCarteira()">
             <br>
             Foto: <input type="file" accept="image/*" onchange="loadFile(event)">
         </div>
+        <input type="button" id="botaoReset" onClick="window.location.reload(true)" value="Resetar carteira">
     </form>
     <br>
     <div id="divCarteira">
@@ -43,8 +40,8 @@
         <label id="cpf"> XXX-XXX-XXX-XX</label>
         <label id="validade"> 31/12/2023</label> 
     </div>    
-
-    
-    
+    <div id="teste">
+        OLAAAAAAAAAAA
+    </div>
 </body>
 </html>
