@@ -6,6 +6,14 @@ var loadFile = function(event) {
     }
   };
 
+  var loadFile2 = function(event) {
+    var output = document.getElementById('output2');
+    output.src = URL.createObjectURL(event.target.files[0]);
+    output.onload = function() {
+      URL.revokeObjectURL(output.src) // free memory
+    }
+  };
+
 function atualizaCarteira(){
   //Função que pega os dados através do formulário e preenche na carteira.
   var nome = document.getElementById("botaoNome").value;

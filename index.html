@@ -28,20 +28,33 @@
             <br>
             <input type="text" id="botaoValidade" onkeyup="atualizaCarteira()">
             <br>
-            Foto: <input type="file" accept="image/*" onchange="loadFile(event)">
+            Foto: <input type="file" accept="image/*" name="botaofoto" onchange="loadFile(event)">
+            QrCode: <input type="file" accept="image/*" name="botaofoto" onchange="loadFile2(event)">
+            <button id="download">Download Carteira</button>
         </div>
         <input type="button" id="botaoReset" onClick="window.location.reload(true)" value="Resetar carteira">
     </form>
     <br>
     <div id="divCarteira">
 		<img id="output"/>  
-        <label id="nome"> FRANCISCO GILDASIO DE FIGUEIREDO</label>
-        <label id="matricula">  XXX-XXX</label>
-        <label id="cpf"> XXX-XXX-XXX-XX</label>
-        <label id="validade"> 31/12/2023</label> 
+        <img id="output2"/> 
+        <div id="campos">
+            <div id="divNome">
+                <label id="nome"> X</label>
+            </div>
+            <div id="divInstituição">
+                <label id="Instituição"> SECRETARIA DE EDUCAÇÃO</label>
+            </div>
+            <div id="divMatricula">
+                <label id="matricula">  X</label>
+            </div>
+            <div id="divCpf">
+                <label id="cpf"> X</label>
+            </div>
+            <div id="divValidade">
+                <label id="validade"> X</label> 
+            </div>
+        </div>
     </div>    
-    <div id="teste">
-        OLAAAAAAAAAAA
-    </div>
 </body>
 </html>
