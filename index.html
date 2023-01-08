@@ -30,7 +30,7 @@
             <br>
             Foto: <input type="file" accept="image/*" name="botaofoto" onchange="loadFile(event)">
             QrCode: <input type="file" accept="image/*" name="botaofoto" onchange="loadFile2(event)">
-            <button id="download">Download Carteira</button>
+            <button onclick="gerarPdf()" id="download">Download Carteira</button>
         </div>
         <input type="button" id="botaoReset" onClick="window.location.reload(true)" value="Resetar carteira">
     </form>
@@ -55,6 +55,15 @@
                 <label id="validade"> X</label> 
             </div>
         </div>
-    </div>    
+    </div> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js" integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/" crossorigin="anonymous"></script>   
+    <script>
+        function gerarPdf(){
+            var doc = new jsPDF();
+            var nome = document.getElementById("botaoNome").value;
+            doc.text("Carteira de professor de "+nome, 10, 10);
+            doc.save("teste.pdf");
+        }
+    </script>
 </body>
 </html>
